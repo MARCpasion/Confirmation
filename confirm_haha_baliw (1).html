@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Confirm Button</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #74ebd5, #9face6);
+    }
+
+    .box {
+      text-align: center;
+      background: white;
+      padding: 40px 35px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    h1 {
+      margin-bottom: 25px;
+      color: #333;
+      font-size: 28px;
+    }
+
+    button {
+      padding: 14px 35px;
+      font-size: 18px;
+      border: none;
+      border-radius: 50px;
+      background: #4f46e5;
+      color: white;
+      cursor: pointer;
+      transition: 0.2s ease;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+      background: #3730a3;
+    }
+
+    #message {
+      margin-top: 25px;
+      font-size: 32px;
+      font-weight: bold;
+      color: #e11d48;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h1>Click the Confirm Button</h1>
+    <button onclick="showMessage()">Confirm</button>
+    <div id="message">haha baliw</div>
+  </div>
+
+  <script>
+    function showMessage() {
+      document.getElementById("message").style.display = "block";
+    }
+  </script>
+</body>
+</html>
